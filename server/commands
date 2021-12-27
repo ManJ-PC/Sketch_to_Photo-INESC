@@ -1,0 +1,13 @@
+python tools/process.py \
+  --input_dir photos/resized \
+  --b_dir photos/blank \
+  --operation combine \
+  --output_dir photos/combined
+
+
+python pix2pix.py \
+  --mode test \
+  --output_dir test \
+  --input_dir combined \
+  --checkpoint photos_train
+

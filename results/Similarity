@@ -1,0 +1,29 @@
+'''
+##findEuclideanDistance
+Number of tries 1: 0.6052631578947368
+Number of tries 2: 0.7105263157894737
+Number of tries 3: 0.8157894736842105
+Number of tries 4: 0.8157894736842105
+Number of tries 5: 0.8421052631578947
+Number of tries 6: 0.8947368421052632
+Number of tries 7: 0.8947368421052632
+
+
+## findNormalisedEuclideanDistance
+Number of tries 1: 0.6842105263157895
+Number of tries 2: 0.8157894736842105
+Number of tries 3: 0.8947368421052632
+Number of tries 4: 0.9210526315789473
+Number of tries 5: 0.9210526315789473
+Number of tries 6: 0.9736842105263158
+Number of tries 7: 1.0
+    
+## findCosineSimilarity
+Number of tries 1: 0.7368421052631579
+Number of tries 2: 0.8421052631578947
+Number of tries 3: 0.8947368421052632
+Number of tries 4: 0.9210526315789473
+Number of tries 5: 0.9473684210526315
+Number of tries 6: 0.9736842105263158
+Number of tries 7: 0.9736842105263158
+'''

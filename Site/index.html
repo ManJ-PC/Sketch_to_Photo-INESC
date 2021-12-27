@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Deep Learning For Face Forensics</title>
+	<link rel="stylesheet" type="text/css" href="Style/index.css" />
+	<script defer type="text/javascript" src="js/utils.js"></script>
+</head>
+
+<body>
+	<div id="container">
+		<header id="pMenu">
+			<ul>
+				<li><a href="#"> Home </a></li>
+				<li><a href="#"> About </a></li>
+				<li><a href="#"> Images </a></li>
+				<li><a href="#"> Help </a></li>
+			</ul>
+		</header>
+		<div id="pContainer">
+			<div id="pTopo">
+				<img src="Images/logoM.png" alt="Logo do site Nome do Site" title="Logo do site" />
+			</div>
+			<div id="pConteudo">
+				<br />
+				<br />
+				<div id="pSobre">
+					<p><strong> Deep learning for face forensics </strong> é um sistema que usa um sketch de uma face
+						(feito por exemplo por um perito de uma força policial) para gerar uma imagem semelhante a uma
+						fotografia. Esta fotografia gerada pode então ser usada para procurar a pessoa que lhe
+						corresponde numa base de dados de fotografias (por exemplo de "mugshots" de suspeitos).
+					</p>
+					<p><strong>Deep learning for face forensics</strong> is a system that uses a face sketch (done by a
+						police expert for example) to generate an image that resembles a photo. This photo may then be
+						used
+						to search for the matching person in a database of photos (for example, a DB of mugshots of
+						suspects).
+					</p>
+				</div>
+				<div class="row">
+					<div class="column">
+						<h3>Upload Image</h3>
+						<input id="fileinput" type="file" accept="image/*" onchange="loadFile(event)" />
+						<button id="upload" onclick="onSelectFile(event)">Generate</button>
+					</div>
+				</div>
+				<div id="sketchDiv">
+					<div class="column">
+						<h3>The Sketch</h3>
+						<img id="sketch">
+					</div>
+				</div>
+				<div class="row" id="loading">
+					<div class="column">
+						<h3>Loading...</h3>
+						<div class="loader"></div>
+					</div>
+				</div>
+				<div id="calculated">
+					<div class="row">
+						<div class="column">
+							<h3>The Generated Photo</h3>
+							<img id="generated">
+						</div>
+					</div>
+
+					<!-- Images used to open the lightbox -->
+					<div class="row">
+						<h3>Most Similar Images</h3>
+						<div class="column">
+							<img src="del.png" class="hover-shadow sim-img" title="Example of title text">
+						</div>
+						<div class="column">
+							<img src="del.png" class="hover-shadow sim-img">
+						</div>
+						<div class="column">
+							<img src="del.png" class="hover-shadow sim-img">
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!--
+	<footer id="pRodape">
+		<ul>
+			<li> <a href="#"> Deep Learning For Face Forensics </a>&copy 2019</li>
+			<li> <a href="#"> Sobre Nós </a> </li>
+			<a href="#"> Contato </a> </li>
+		</ul>
+	</footer>
+-->
+</body>
+
+</html>
